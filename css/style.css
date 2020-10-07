@@ -1,0 +1,580 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+
+    position: relative;
+    width: 100%;
+    height: 100%;    
+
+}
+
+
+#navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #ffffff;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    height: 5.5rem;
+    max-height: 5.5rem;
+    line-height: 5.3rem;
+}
+#navbar .container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem, 3rem;
+    margin: 1rem, 4rem;
+    height: 5.5rem;
+    max-height: 5.5rem;
+    
+}
+
+#navbar .logo img {
+    size: 8rem;
+    width: 16rem;
+    padding-left: 2rem;
+
+}
+
+#navbar .navbar-menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-right: 3rem;
+    text-transform: uppercase;
+    
+
+}
+
+#navbar .navbar-menu ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 0, 0.25rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+
+}
+
+#navbar .navbar-menu ul li a:hover{
+    color: black;
+}
+
+#showcase {
+    background: url("../image/download.jpg") rgba(0, 0,0, 0.2) no-repeat center center/cover;
+    background-blend-mode: overlay;
+    height: 48vh;
+    
+}
+
+.showcase-content {
+    display:flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: flex-start;
+    /* height: 100%; */
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 10rem;
+    /* max-width: ; */
+    flex-direction: column;
+    
+}
+
+.showcase-content .content1{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    padding-left: 16rem; 
+    padding-top: 8rem; 
+    
+}
+
+.showcase-content .content1 h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 0.1rem;
+
+}
+
+.showcase-content .content1 h6{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.showcase-content .btnn{
+    padding-left: 16rem;
+}
+.showcase-content button{
+    background-color: #47B475;
+    color: #ffffff;
+    border-color: #47B475;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-style: solid;
+}
+
+#tools {
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+}
+ 
+#tools .container h4{
+    margin-bottom: 6rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 75;
+    text-align: center;
+    text-transform: uppercase;
+    color: #292929;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#tools .items .resource{
+    display: flex;
+    margin-bottom: 6rem;
+}
+#tools .items .resource img{
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    opacity: 0.6;
+
+}
+
+#need{
+    background-color: #f8f8f8;
+    
+}
+
+#need .container{
+    display: flex;
+    height: 100vh;
+    padding: 6rem 16rem;
+}
+
+#need div{
+    flex: 1;
+}
+
+#need .pictures{
+    max-height: 100%;
+    max-width: 100%;
+}
+#need .pictures img {
+
+float: left;
+width: 50%;
+height: 40vh;
+
+}
+
+.you-need {
+    text-align: center;
+    padding: 0 1.5rem;
+    width: 33.3%;
+    margin: 0 0 0 9.75rem;
+    align-self: center;
+    
+    
+}
+
+.you-need h3{
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+    font-weight:50;
+    color: #292929;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 4rem;
+}
+
+.you-need p{
+    font-size: 1.5rem;
+    margin-bottom: 2.4rem;
+    color: #666666;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.you-need .btn-light {
+     padding: 1.2rem 2.4rem;
+     margin: 0 0 2.4rem;
+     text-transform: uppercase;
+     color: #47B475;
+     font-size: 1.2rem;
+     border-color: #47B475;
+     border-style: solid;
+     background-color: #f8f8f8;
+
+}
+
+.you-need .btn-light:hover{
+    background-color: #47B475;
+    color: #ffffff;
+}
+
+#price{
+    background-color: #ffffff;
+    padding: 10rem 20rem;
+    
+}
+
+#price .container{
+    display: flex;
+    /* height: auto; */
+    align-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    justify-content: center;
+}
+
+#price .container{
+    padding: 0 1.5rem;
+}
+
+#price div{
+    flex: 1;
+}
+
+#price .container h3{
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+    font-weight:50;
+    color: #292929;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 4rem;
+}
+
+#price .container .job {
+    flex:2;
+    display: block;
+    margin-right: 2rem;
+}
+
+#price .container .job-content{
+
+font-size: 1.6rem;
+line-height: 2.8rem;
+font-weight: 400;
+margin-bottom: 4rem;
+}
+
+#price .container h6{
+    font-size: 1.2rem;
+    padding: 0 3.2rem;
+    color: #292929;
+    margin:0 0 3.2rem;
+    /* height: auto; */
+    letter-spacing: 0.2rem;
+}
+
+.prices {
+    background-color: #47B475;
+    color: #ffffff;
+    text-align: center;
+    padding: 3.5rem 5.5rem;
+    justify-content: center;
+    
+}
+
+.prices h5{
+    font-size: 1.6rem;
+    margin-block-start: 1.67rem;
+    margin-block-end: 1.67rem;
+    margin: 2.4rem;
+    letter-spacing: 0.2rem;
+}
+
+.prices span{
+    font-size: 8rem;
+    margin: 0 0 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    line-height: 8rem;
+    margin-bottom: 1.6rem;
+}
+
+
+.prices p{
+    margin: 0 0 0.5rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+
+}
+
+.prices .btn-green {
+    color: #ffffff;
+    background-color: #47B475;
+    border-color: #ffffff;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-style: solid;
+    margin: 0 0 2.4rem;
+}
+
+.prices .btn-green:hover{
+    color: #292929;
+    background-color: #ffffff;
+}
+
+#parallax {
+    background-image: url("../image/macbook-pro-iphone-cup-desk-7974.jpg");
+    /* height: 50rem; */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    
+    
+}
+
+#parallax .container {
+    background-color: rgba(0, 0,0, 0.7);
+    height: 100%;
+    text-align: center;
+    
+}
+
+#parallax .container2{
+    padding: 10rem 30rem;
+}
+
+#parallax .container .avatar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    min-height: .1rem;
+    
+}
+
+#parallax .container .avatar img{
+    margin: 0 1.2rem;
+    max-height: 5rem;
+    display: inline-block;
+}
+
+#parallax .container h3 {
+    font-size: 3.2rem;
+    margin: 0 0 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2.4rem;
+    line-height: 4rem;
+    margin-top: 2.4rem;
+    font-weight: 50;
+}
+
+#parallax .container p{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+#parallax .container h6{
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.2rem;
+}
+
+#employment {
+    background-color: #ffffff;
+    /* height: auto; */
+    color: #292929;
+}
+
+#employment .container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 10rem 15rem;
+    font-weight: 20;
+}
+
+#employment .container .employ h4 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    font-weight: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.6rem;
+    display: block;
+}
+
+#employment .container .employ p{
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+    margin-bottom: 4.4rem;
+}
+
+#employment .container .section {
+    display: flex;
+    margin-top: 1.6rem;
+}
+#employment .container .section .sec1{
+    text-align: center;
+}
+
+#employment .container .section .sec1 .icon{
+    padding-bottom: 2rem;
+    color: #47B475;
+    
+}
+
+.fa-circle-thin:hover:{
+    color: red;
+    
+}
+#employment .container .section .sec1 .icon span:hover{
+    
+    color: #666666;
+}
+#employment .container .section .sec1 h5{
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    font-weight: 20;
+}
+
+#employment .container .section .sec1 p{
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    display: block;
+    margin-inline-start: 1em;
+    margin-block-end: 1em;
+    text-align: justify;
+
+}
+
+#admission {
+    text-align: center;
+}
+
+#admission .container{
+    padding: 0 
+}
+
+#admission h4{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+    display: block;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+}
+
+#admission p{
+    margin-bottom: 16rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:0.8rem;
+    display: block;
+    margin-inline-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+#admission button {
+    background-color: #47B475;
+    color: #ffffff;
+    border-color: #47B475;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-style: solid;
+    align-content: center;
+    margin-top: 16px;
+}
+
+#last-section{
+    min-height:4.76rem;
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: -.2rem;
+}
+
+.last-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.5rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+.last-content h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 20;
+    line-height: 3.2rem;
+    letter-spacing: 0.3rem;
+    display: block;
+    margin-bottom: 2.4rem;
+}
+
+.last-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.last-content hr{
+    margin-bottom: 2.4rem;
+}
+
+
+
+footer{
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 7.2rem 0;
+    color: #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+footer img {
+
+    max-height: 5rem;
+    vertical-align: middle;
+    margin-bottom: 3.2rem;
+    opacity: 0.4;
+
+}
+
